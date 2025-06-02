@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #ffb7cf;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #fa95a4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #8b0000;
+}
+
+header p {
+    font-style: italic;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#linha-do-tempo h2,
+#galeria h2,
+#razoes h2,
+#playlists h2,
+#carta h2,
+#surpresa h2 {
+    color: #c71585;
+    border-bottom: 2px solid #c71585;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.marco {
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.marco .data {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff1493;
+}
+
+.marco img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.galeria-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria-container img {
+    width: calc(50% - 10px);
+    border-radius: 10px;
+}
+
+#razoes ul {
+    list-style-type: heart;
+    padding-left: 20px;
+}
+
+#razoes li {
+    margin-bottom: 10px;
+}
+
+.carta-texto {
+    background-color: #fffafa;
+    padding: 20px;
+    border-left: 5px solid #db7093;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.carta-texto p {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+@keyframes descerCoracoes {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.chuva-coracoes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* permite clicar nos elementos por baixo */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.coracao {
+  position: absolute;
+  color: #ff4da6;
+  font-size: 24px;
+  animation: descerCoracoes linear infinite;
+  opacity: 0.8;
+}
