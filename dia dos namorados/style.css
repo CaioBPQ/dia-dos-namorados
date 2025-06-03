@@ -146,3 +146,35 @@ button:hover {
   animation: descerCoracoes linear infinite;
   opacity: 0.8;
 }
+#contador-dias {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.contador-box {
+    display: inline-block;
+    background-color: #fff0f5;
+    padding: 30px;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c71585;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+            .galeria-container {
+                flex-direction: column;
+            }
+        }
+
+        #razoes li::before {
+            content: "❤️ ";
+            margin-right: 5px;
+        }
+
+        body {
+            background-color: #ffeef5;
+            color: #222;
+        }

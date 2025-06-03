@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia Dos Namorados</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="chuva-coracoes">
-  <!-- Gere quantos quiser -->
-  <span class="coracao" style="left: 10%; animation-duration: 6s; animation-delay: 0s;">💖</span>
-  <span class="coracao" style="left: 25%; animation-duration: 7s; animation-delay: 1s;">💘</span>
-  <span class="coracao" style="left: 40%; animation-duration: 5s; animation-delay: 2s;">💕</span>
-  <span class="coracao" style="left: 55%; animation-duration: 6s; animation-delay: 1.5s;">💗</span>
-  <span class="coracao" style="left: 70%; animation-duration: 8s; animation-delay: 0.5s;">💓</span>
-  <span class="coracao" style="left: 85%; animation-duration: 7s; animation-delay: 2.2s;">💞</span>
-</div>
+        <span class="coracao" style="left: 10%; animation-duration: 6s; animation-delay: 0s;">💖</span>
+        <span class="coracao" style="left: 25%; animation-duration: 7s; animation-delay: 1s;">💘</span>
+        <span class="coracao" style="left: 40%; animation-duration: 5s; animation-delay: 2s;">💕</span>
+        <span class="coracao" style="left: 55%; animation-duration: 6s; animation-delay: 1.5s;">💗</span>
+        <span class="coracao" style="left: 70%; animation-duration: 8s; animation-delay: 0.5s;">💓</span>
+        <span class="coracao" style="left: 85%; animation-duration: 7s; animation-delay: 2.2s;">💞</span>
+    </div>
 
     <header>
-        <h1>Para Isabela a Mulher mais linda desse mundo</h1>
-        <p>site feito para aprensentar meu amor por você.</p>
+        <h1>Para Isabela, a mulher mais linda deste mundo</h1>
+        <p>Site feito para apresentar meu amor por você.</p>
     </header>
+   <section id="contador-dias">
+  <h2 data-aos="fade-down">Quantos Dias Juntos?</h2>
+  <div class="contador-box" data-aos="zoom-in">
+    <p id="contador"></p>
+  </div>
+    </section>
+
 
     <main>
-        <section id="linha-do-tempo">
+       <section id="linha-do-tempo">
             <h2>Momentos</h2>
             <div class="marco">
                 <div class="data">14/10/2024</div>
@@ -165,14 +173,16 @@
             <p>Clique no botão abaixo para uma pequena surpresa!</p>
             <button onclick="alert('Feliz Dia dos Namorados, meu amor! ❤️')">Abrir Surpresa</button>
         </section>
+        
     </main>
+<script src="script.js"></script>
 
     <footer>
         <p>&copy; Caio - Dia dos Namorados 2025</p>
     </footer>
-
     <script>
-        // Você pode adicionar JavaScript aqui para funcionalidades mais interativas
+        AOS.init();
     </script>
+
 </body>
 </html>
