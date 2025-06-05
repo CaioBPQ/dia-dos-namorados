@@ -1,4 +1,4 @@
-  const inicio = new Date("2024-10-05T00:00:00"); // data de início do relacionamento
+  const inicio = new Date("2024-10-05T00:00:00"); 
 
   function atualizarContador() {
     const agora = new Date();
@@ -25,8 +25,6 @@
 
     document.getElementById("contador").innerText = `Estamos juntos há ${partes.join(', ').replace(/,([^,]*)$/, ' e$1')} ❤️`;
   }
-
-  // Atualiza a cada segundo
   atualizarContador();
   setInterval(atualizarContador, 1000);
 
